@@ -1,14 +1,14 @@
 pipeline {
     environment {
-    imagename = "518572/python-static"
-    registryCredential = 'rajeev_docker_id'
+    imagename = "pratiksb/python-static"
+    registryCredential = 'test-demo-docker'
     dockerImage = ''
     }
     agent any
     stages {
         stage('Cloning Git') {
             steps {
-                git([url: 'https://github.com/microdegree-kannada/docker-jenkins.git', branch: 'main'])
+                git([url: 'https://github.com/Pratikbhusanur/pratik-docker-jenkin-python-demo.git', branch: 'main'])
 
              }
         }
