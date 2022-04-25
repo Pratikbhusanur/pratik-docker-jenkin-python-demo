@@ -9,7 +9,6 @@ pipeline {
         stage('Cloning Git') {
             steps {
                 git([url: 'https://github.com/Pratikbhusanur/pratik-docker-jenkin-python-demo.git', branch: 'main'])
-
              }
         }
         stage('Building image') {
