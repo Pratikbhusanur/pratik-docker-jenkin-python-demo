@@ -1,6 +1,6 @@
 pipeline {
     environment {
-    imagename = "pratiksb/python-static:1"
+    imagename = "pratiksb/python-static-jenkin"
     registryCredential = 'test-demo-docker'
     dockerImage = ''
     }
